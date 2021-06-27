@@ -3,6 +3,8 @@
 
 let arr = [1, -3, 5, 6, -7, 8, 9, -11];
 
+// Example 1
+
 let arrNew = arr.filter(function(elem) {
     if (elem % 2 === 0) {
         return true;
@@ -12,3 +14,11 @@ let arrNew = arr.filter(function(elem) {
 })
 
 console.log(arrNew);
+
+// Example 2
+
+function func(elem) { return elem % 2 === 0 };
+
+let arrNew2 = arr.filter(func);
+
+console.log(arrNew2);

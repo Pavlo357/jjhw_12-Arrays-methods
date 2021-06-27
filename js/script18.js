@@ -4,6 +4,8 @@
 
 let arr = ['aaa', 'aaaqqq', 'zzzqq', 'zz', 'qsaa', 'q', 'az'];
 
+// Example 1
+
 let arrNew = arr.filter(function(arr) {
     if (arr.length >= 5) {
         return true;
@@ -13,3 +15,11 @@ let arrNew = arr.filter(function(arr) {
 })
 
 console.log(arrNew);
+
+// Example 2
+
+function func(arr) { return arr.length >= 5 };
+
+let arrNew2 = arr.filter(func);
+
+console.log(arrNew2);
